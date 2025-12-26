@@ -109,20 +109,8 @@ Open your browser and go to:
 cpp
 Copy code
 http://127.0.0.1:5000/
-🖼️ Screenshots
-Screenshots of the application interface and output are provided in the repository to demonstrate:
 
-Canvas input
 
-Image upload
-
-Recognized equation
-
-Generated solution
-
-📚 Reference
-YouTube Tutorial:
-https://www.youtube.com/watch?v=4Yban3Yb61M
 
 🔮 Future Enhancements
 Support for complex mathematical expressions
