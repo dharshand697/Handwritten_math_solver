@@ -14,8 +14,6 @@ Due to the vast scope of mathematics, this project focuses on a **limited subset
 - Arithmetic operators: **+, −, ×, ÷**
 - Character: **y**
 
-This project is suitable for **Final Year / Major Project**, **Academic submission**, and **Machine Learning portfolios**.
-
 ---
 
 ## 🎯 Key Features
