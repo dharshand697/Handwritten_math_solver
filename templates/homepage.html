@@ -1,79 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Webpage</title>
-    <style>
-        body {
-            
-                background-image: url("static\\background_images\\transperant 1.png");
-                background-size: cover;
-            
-        }
-        .upload-image{
-            position: absolute;
-            top: 325px;
-            left:369px;
-            width: 140px;
-            height: 40px;
-            color: black;
-            font-size: 17px;
-            background-color:#f5af92;
-            border-color: #f5af92;
-            border-radius: 8px;
-    
-        }
-        .canvas-board{
-            position: absolute;
-            top: 325px;
-            left:808px;
-            width: 140px;
-            height: 40px;
-            color: black;
-            font-size: 17px;
-            background-color: #bccdf4;
-            border-color:#bccdf4 ;
-            border-radius: 8px;
-        }
-        .tag-line1{
-            font-size: 50px;
-            position: absolute;
-            left: 370px;
-            top: 87px;
-            text-align: justify; 
-            color: orange;
-            border: white;
-            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-        }
-
-        .tag-line2{
-            font-size: 50px;
-            position: absolute;
-            left: 330px;
-            top: 144px;
-            text-align: justify; 
-            color: orange;
-            border: white;
-            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-        }
-        </style>
-        
+    <meta charset="UTF-8">
+    <title>Equation Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-   
-        <div class="tag-line1">
-            <P>Handwritten Mathematical </P>
-        </div>
-        <div class="tag-line2">
-            <P>Equation Recogniser And Solver</P>
-        </div>
+<div class="container">
+    <h1>🧮 Handwritten Equation Solver</h1>
 
-    <form action="{{ url_for('upload_image') }}" method="POST">
-        <button id="abc" class="upload-image">Upload Image</button>
-        
-    </form>
-    <form action="{{ url_for('canvas_image') }}" method="POST">
-        <button id="xyz" class="canvas-board">Canvas Board</button>
-    </form>
+    <input type="file" id="imageInput">
+
+    <button class="btn predict" onclick="uploadImage()">📤 Upload Image</button>
+    <button class="btn predict" onclick="predictEquation()">🤖 Predict</button>
+
+    <input type="text" id="equationBox" placeholder="Predicted equation" readonly>
+
+    <button class="btn solve" onclick="solveEquation()">🧠 Solve</button>
+
+    <div class="result-card glow">
+        <h2 id="result"></h2>
+    </div>
+
+    <div class="links">
+        <a href="/canvas_image">✍ Draw Equation</a>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

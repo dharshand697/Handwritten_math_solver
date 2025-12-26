@@ -36,7 +36,7 @@ img_width = 45
 #class_names = ['(', ')', '+', '-', '1', '2', '3', '4', '5', '6', '7', '8', '9', '=', 'cos', 'div', 'log', 'sin', 'tan', 'times', 'y']
 #class_names = ['(',')','+','-','0','1','2','3','4','5','6','7','8','9','=','cos','div','log','sin','tan','times','y']
 #class_names = ['+', '-', '1', '2', '3', '4', '5', '6', '7', '8', '9','times','y']
-class_names = ['+', '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '=', 'div', 'times', 'y']
+class_names = ['+', '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '=', 'div', 'times', 'y', '(', ')']
 def getOverlap(a, b):
      return max(0, min(a[1], b[1]) - max(a[0], b[0]))
 
@@ -154,7 +154,7 @@ def put_single_asterisk(s):
 
     
 # Load model
-new_model = tf.keras.models.load_model('eqn-detect1 -model', compile=False)
+new_model = tf.keras.models.load_model('eqn-detect1-model', compile=False)
 
 
 def equation_solver_function(img_path):

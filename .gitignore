@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+pix2tex_env/
+venv/
+
+# Dataset (IMPORTANT)
+dataset/
+
+# Models
+*.h5
+*.pt
+
+# OS
+.DS_Store7
