@@ -60,6 +60,16 @@ Handwritten-Mathematical-Equation-Recognition-Using-CNN/
 └── .gitignore
 
 
+## 🖼️ Screenshots
+
+### Home Page
+![Home Page](screenshots/sc1.png)
+
+### Canvas Input
+![Canvas Input](screenshots/sc2.png)
+
+### Recognized Output
+![Result](screenshots/sc3.png)
 
 ---
 
