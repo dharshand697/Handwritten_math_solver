@@ -1,28 +1,143 @@
-# Handwritten-Mathematical-Equation-Recognition-Using-CNN
+# Handwritten Mathematical Equation Recognition and Solving Using CNN
 
+## 📌 Project Overview
+This project presents a **Handwritten Mathematical Equation Recognition and Solving System** built using **Convolutional Neural Networks (CNN)** and a **Flask-based web application**.
 
+The application allows users to:
+- Upload an image of a handwritten mathematical equation **OR**
+- Draw an equation directly on a canvas
 
-Handwritten Mathematical Equation Recognition and Solving Using Convolution Neural Networks
-we developed a user friendly Flask application that takes an image mathematical equation or equation written on canvas , recognize the equation using Convolution Neural Network and present the user with required solution.Since mathematics itself is a very wide field therefore, only a subset of these mathematical symbols is considered in this paper which are digits (0-9), arithmetic operators (+, -, *, ÷), characters(y).
+The system recognizes the handwritten equation using a trained CNN model and then **displays the corresponding mathematical expression and its solution**.
 
-**Downlod Dataset Here**
-https://www.kaggle.com/datasets/xainano/handwrittenmathsymbols?resource=download
+Due to the vast scope of mathematics, this project focuses on a **limited subset of symbols**, including:
+- Digits: **0–9**
+- Arithmetic operators: **+, −, ×, ÷**
+- Character: **y**
 
-**Reference**
+This project is suitable for **Final Year / Major Project**, **Academic submission**, and **Machine Learning portfolios**.
+
+---
+
+## 🎯 Key Features
+- Handwritten equation recognition using CNN
+- Canvas-based equation input
+- Image upload support
+- User-friendly Flask web interface
+- Mathematical expression solving
+- Modular and extensible design
+
+---
+
+## 🧠 Technologies Used
+- **Programming Language:** Python  
+- **Deep Learning:** Convolutional Neural Networks (CNN)  
+- **Frameworks & Libraries:**
+  - TensorFlow / Keras
+  - NumPy
+  - OpenCV
+  - Pillow
+- **Web Framework:** Flask  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Tools:** VS Code, Git, GitHub  
+
+---
+
+## 🗂️ Project Structure
+Handwritten-Mathematical-Equation-Recognition-Using-CNN/
+│
+├── dataset/ # Handwritten symbol dataset (not included)
+├── model/ # Trained CNN model files
+├── static/ # CSS, JS, images
+├── templates/ # HTML templates
+│ ├── index.html
+│ ├── homepage.html
+│ ├── uploadimage.html
+│ └── canvasimage.html
+│
+├── app.py # Flask application
+├── train.py # CNN training script
+├── test.py # Model testing script
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── .gitignore
+
+yaml
+Copy code
+
+---
+
+## ⚙️ How the System Works
+1. User uploads or draws a handwritten mathematical equation
+2. Image preprocessing (grayscale, resizing, normalization)
+3. CNN extracts features and classifies symbols
+4. Symbols are combined into a valid mathematical expression
+5. The equation is evaluated and the solution is displayed
+
+---
+
+## 📊 Dataset
+The project uses a publicly available handwritten mathematical symbols dataset.
+
+🔗 **Download Dataset:**  
+https://www.kaggle.com/datasets/xainano/handwrittenmathsymbols
+
+**Symbols included:**
+- Digits (0–9)
+- Operators (+, −, ×, ÷)
+- Character (y)
+
+⚠️ Dataset is not included in the repository to keep it lightweight.
+
+---
+
+## 🚀 Installation & Execution
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/dharshand697/Handwritten_math_solver.git
+cd Handwritten_math_solver
+2️⃣ Install Dependencies
+bash
+Copy code
+pip install -r requirements.txt
+3️⃣ Run the Application
+bash
+Copy code
+python app.py
+Open your browser and go to:
+
+cpp
+Copy code
+http://127.0.0.1:5000/
+🖼️ Screenshots
+Screenshots of the application interface and output are provided in the repository to demonstrate:
+
+Canvas input
+
+Image upload
+
+Recognized equation
+
+Generated solution
+
+📚 Reference
+YouTube Tutorial:
 https://www.youtube.com/watch?v=4Yban3Yb61M
 
-<img width="592" alt="Screenshot 2023-07-05 at 2 17 10 PM" src="https://github.com/nalliboinaramya/Handwritten-Mathematical-Equation-Recognition-Using-CNN/assets/107070879/0b4ae423-4ad6-40c1-a55d-fbcbe67f77b0">
-<img width="591" alt="Screenshot 2023-07-05 at 2 16 40 PM" src="https://github.com/nalliboinaramya/Handwritten-Mathematical-Equation-Recognition-Using-CNN/assets/107070879/f1aec5c0-d5c4-4053-be0b-a52858c8865f">
+🔮 Future Enhancements
+Support for complex mathematical expressions
 
-<img width="470" alt="Screenshot 2023-07-05 at 2 17 23 PM" src="https://github.com/nalliboinaramya/Handwritten-Mathematical-Equation-Recognition-Using-CNN/assets/107070879/c7f70832-7296-4174-b6c1-d407a4c670fa">
-<img width="672" alt="Screenshot 2023-07-05 at 2 17 48 PM" src="https://github.com/nalliboinaramya/Handwritten-Mathematical-Equation-Recognition-Using-CNN/assets/107070879/da1394d2-6e1e-43de-9933-bcd90633d717">
+Integration with LaTeX rendering
 
-<img width="612" alt="Screenshot 2023-07-05 at 2 18 05 PM" src="https://github.com/nalliboinaramya/Handwritten-Mathematical-Equation-Recognition-Using-CNN/assets/107070879/11b5c513-add3-4b33-8c7f-ed9c5ed0f43e">
+Mobile-friendly UI
 
-To run the project execute the following commands
+Improved accuracy using RNN/Transformer models
 
-1.Clone the Repository 
+Support for regional handwritten symbols
 
-2.Run **pip install -r requirements.txt** command 
+👨‍💻 Author
+Dharshan D
+GitHub: https://github.com/dharshand697
 
-3.Run **python app.py** command 
+📜 License
+This project is developed for educational and academic purposes only.
