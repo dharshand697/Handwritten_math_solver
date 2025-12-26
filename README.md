@@ -61,8 +61,7 @@ Handwritten-Mathematical-Equation-Recognition-Using-CNN/
 ├── README.md # Project documentation
 └── .gitignore
 
-yaml
-Copy code
+
 
 ---
 
